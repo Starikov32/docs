@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HabitVault — Help &amp; Support</title>
+<meta name="description" content="Help and support for HabitVault, the offline habit and routine tracker. Contact us and browse frequently asked questions.">
+<style>
+  :root {
+    --bg: #1C1F26;
+    --surface: #252A33;
+    --surface-2: #2C323D;
+    --text: #E8EAED;
+    --muted: #9AA0AA;
+    --accent: #57C99A;
+    --border: rgba(255, 255, 255, 0.08);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 20px 64px;
+  }
+  header { text-align: center; margin-bottom: 40px; }
+  .badge {
+    width: 64px; height: 64px;
+    margin: 0 auto 20px;
+    border-radius: 18px;
+    background: radial-gradient(circle at 50% 45%, rgba(87, 201, 154, 0.25), transparent 70%), var(--surface);
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .badge svg { width: 34px; height: 34px; }
+  h1 { font-size: 1.7rem; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .tagline { color: var(--muted); margin: 0; font-size: 1.02rem; }
+  section { margin-top: 36px; }
+  h2 {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin: 0 0 16px;
+  }
+  p { margin: 0 0 16px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 22px 6px;
+  }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px;
+  }
+  .contact p { margin: 0; flex: 1 1 220px; color: var(--muted); }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #10241B;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    white-space: nowrap;
+    transition: opacity 0.15s ease;
+  }
+  .btn:hover { opacity: 0.88; }
+  details {
+    border-bottom: 1px solid var(--border);
+    padding: 6px 0;
+  }
+  details:last-child { border-bottom: none; }
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 12px 28px 12px 0;
+    position: relative;
+    list-style: none;
+    outline: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    position: absolute;
+    right: 4px; top: 10px;
+    font-size: 1.25rem;
+    color: var(--accent);
+    transition: transform 0.2s ease;
+  }
+  details[open] summary::after { transform: rotate(45deg); }
+  details p { color: var(--muted); padding: 0 0 8px; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 48px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#57C99A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6 9 17l-5-5"/>
+        </svg>
+      </div>
+      <h1>HabitVault</h1>
+      <p class="tagline">Help &amp; Support</p>
+    </header>
+
+    <p>Thanks for using HabitVault — the offline tracker for building good habits, breaking bad ones and reaching your goals. Found a bug, have a question or an idea? We read every message.</p>
+
+    <div class="contact">
+      <p>The fastest way to reach us is by email. We usually reply within a couple of days.</p>
+      <a class="btn" href="mailto:hssurname@gmail.com?subject=HabitVault%20Support">Email support</a>
+    </div>
+
+    <section>
+      <h2>Frequently asked questions</h2>
+      <div class="card">
+        <details open>
+          <summary>Does HabitVault need an account or internet?</summary>
+          <p>No. The app works fully offline, needs no account and no sign-up. All of your data stays on your device.</p>
+        </details>
+        <details>
+          <summary>How do I back up or move my data to a new phone?</summary>
+          <p>Open Settings → Export data to save everything as a single file. On the other device, use Settings → Import data and pick that file to restore your habits and history.</p>
+        </details>
+        <details>
+          <summary>How are streaks calculated?</summary>
+          <p>Missing a scheduled day breaks the streak. Days a habit isn't scheduled for are never counted against you, so a Mon/Wed/Fri habit keeps its streak over the weekend.</p>
+        </details>
+        <details>
+          <summary>Can I track a habit only on certain weekdays?</summary>
+          <p>Yes. A habit can run every day or on the specific weekdays you choose — for example, the gym on Monday, Wednesday and Friday.</p>
+        </details>
+        <details>
+          <summary>What's the difference between a good and a bad habit?</summary>
+          <p>Good habits are ones you want to build (read, work out, drink water). Bad habits are ones you want to break (no smoking, no late-night snacks). Both count toward your progress and goals.</p>
+        </details>
+        <details>
+          <summary>I have a bug report or a feature request.</summary>
+          <p>Please email us with as much detail as you can — what you did, what you expected and what happened. Your app version is shown at the bottom of the Settings screen.</p>
+        </details>
+      </div>
+    </section>
+
+    <footer>
+      <p><a href="https://starikov32.github.io/docs/privacy-policy.html">Privacy Policy</a></p>
+      <p>© 2026 Starikov</p>
+    </footer>
+  </div>
+</body>
+</html>
