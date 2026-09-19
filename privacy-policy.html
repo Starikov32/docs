@@ -29,7 +29,7 @@
 <body>
 
   <h1>HabitVault — Privacy Policy</h1>
-  <p class="meta">Last updated: 30 June 2026</p>
+  <p class="meta">Last updated: 19 September 2026</p>
 
   <p>
     HabitVault ("the app") is a habit-tracking application. This Privacy Policy
@@ -47,9 +47,17 @@
   <h2>Where your data lives</h2>
   <p>
     All data you create — your habits, daily check-ins, streaks, settings — is
-    stored <strong>only on your device</strong>, in the app's local database. It
-    never leaves your device and is never uploaded to any server. We have no
-    servers, and we cannot see your data.
+    stored <strong>on your device</strong>, in the app's local database. The app
+    itself never uploads it anywhere: we have no servers, and we cannot see your
+    data.
+  </p>
+  <p>
+    One thing is worth stating plainly: the app takes part in <strong>Android's
+    standard backup</strong>, like most apps do. If you have backup switched on
+    in your Android settings, the system may copy the app's data to <em>your
+    own</em> Google Drive. That copy belongs to your Google account, not to us,
+    and we have no way to see it. You can stop it in your device's backup
+    settings.
   </p>
 
   <h2>Network access</h2>
@@ -61,9 +69,23 @@
 
   <h2>Permissions</h2>
   <p>
-    The app requests a single Android permission: <code>VIBRATE</code>, used only
-    to provide haptic feedback when you interact with the interface. No other
-    permissions are requested.
+    The app requests three Android permissions. None of them collect or transmit
+    anything &mdash; they only let features work on your own device.
+  </p>
+  <ul>
+    <li><code>VIBRATE</code> &mdash; haptic feedback when you interact with the
+      interface.</li>
+    <li><code>POST_NOTIFICATIONS</code> &mdash; shows the optional reminder about
+      habits you have not checked off yet. Reminders are switched off by default,
+      you choose the time, and the notification text is composed and displayed
+      entirely on your device.</li>
+    <li><code>RECEIVE_BOOT_COMPLETED</code> &mdash; lets the app put your reminder
+      back in place after the device restarts or the app updates. Android clears
+      scheduled alarms in both cases, so without this the reminder would quietly
+      stop arriving. Nothing else happens in the background.</li>
+  </ul>
+  <p>
+    No other permissions are requested. The app does not request Internet access.
   </p>
 
   <h2>Export and import</h2>
